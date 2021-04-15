@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.bac {
+  position: fixed;
+  width: 100%;
+  bottom: 10px;
+  z-index: -1;
+}
+
+table,
+th,
+td {
+  border: 2px solid #dddddd;
+  border-collapse: collapse;
+  padding: 1px 20px;
+  font-size: 12px;
+  font-weight: normal;
+}
+table {
+  margin-top: 10px;
+}
+#t01 tr:nth-child(even) {
+  background-color: rgb(247, 247, 247);
+}
+#t01 tr:nth-child(odd) {
+  background-color: rgb(176, 176, 176);
+}
+tr:last-of-type {
+  border-bottom: 5px solid #009879;
+}
+#t01 th {
+  background-color: #009879;
+  color: black;
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 44px;
+  color: #009879;
+}
+.cityName {
+  font-size: 26px;
+  font-weight: 400;
+}
+table tr.jumah {
+  font-weight: bold;
+  color: #009879;
+}
+.duahs {
+  margin-top: 10px;
+  width: 500px;
+  border: 6px solid #009879;
+  border-radius: 20px;
+  border-top-right-radius: 44px;
+  border-bottom-right-radius: 44px;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+}
+.duah_title {
+  font-size: x-large;
+  padding: 5px;
+}
+.duah_mean {
+  padding: 5px;
+  font-size: 18px;
+}
+.contact {
+  margin-right: 5px;
+  border-radius: 40px;
+  padding: 3px 6px;
+  background-color: #009879;
+}
+.link {
+  font-size: small;
+  text-decoration: none;
+  color: black;
+}
+.message {
+  display: flex;
+  justify-content: center;
+}
+/* ------------------for mobile first-------------------- */
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .bac {
+    position: fixed;
+    width: 100%;
+    bottom: 10px;
+    z-index: -1;
+  }
+  table,
+  th,
+  td {
+    padding: 1px 20px;
+    font-size: 8px;
+    font-weight: normal;
+  }
+  .table{
+    /* width: 100%; */
+    min-height: 1000px;
+  }
+  h1 {
+    font-size: x-large;
+  }
+  .cityName {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .duahs {
+    margin-top: 20px;
+    width: 350px;
+  }
+  .duah_title {
+    padding: large;
+    font-size: large;
+  }
+  .duah_mean {
+    font-size: small;
+  }
+  .message {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact {
+    width: 85px;
+    margin-top: 4px;
+  }
+  .link {
+    font-size: small;
+    text-decoration: none;
+    color: black;
+  }
+}
